@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "../Nav/Nav";
-import Banner from "../Banner/Banner";
+import Nav from "../../Components/Nav/Nav";
+import Banner from "../../Components/Banner/Banner";
 import "./HomeScreen.css";
-import Row from "../Row/Row";
+import Row from "../../Components/Row/Row";
 import requests from "../../services/requests";
 
 export default function HomeScreen() {
