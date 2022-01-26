@@ -4,6 +4,7 @@ import Nav from "../../Components/Nav/Nav";
 import { selectUser } from "../../features/userSlice";
 import "./Profile.css";
 import { auth } from "../../firebase";
+import Plans from "../../Components/Plans/Plans";
 
 export default function Profile() {
   const user = useSelector(selectUser);
@@ -23,6 +24,7 @@ export default function Profile() {
             <h2>{user.email}</h2>
             <div className="profilePlans">
             <h3>Plans</h3>
+            <Plans />
             {/* signOut comes from the firebase auth */}
               <button onClick={() => auth.signOut()} className="profileSignOut">Sign Out</button>
             </div>
