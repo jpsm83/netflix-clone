@@ -1,13 +1,13 @@
 import React from "react";
 import Nav from "../../Components/Nav/Nav";
 import Banner from "../../Components/Banner/Banner";
-import "./HomeScreen.css";
 import Row from "../../Components/Row/Row";
 import requests from "../../services/requests";
+import "./Home.css";
 
-export default function HomeScreen() {
+export default function Home() {
   return (
-    <div className="homeScreen">
+    <div className="home">
       <Nav />
       <Banner />
       <Row
