@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Signup from "../Signup/Signup";
+import SignupBox from "../../Components/SignupBox/SignupBox";
 
 export default function Login() {
 
@@ -20,7 +20,7 @@ const [getStarted, setGetStarted] = useState(false);
       </div>
       <div className="logingScreenBody">
       {signin ? (
-        <Signup />
+        <SignupBox />
       ) : (
         <>
               <h1>Unlimited films, TV programmes and more.</h1>
@@ -29,7 +29,7 @@ const [getStarted, setGetStarted] = useState(false);
               <div className="loginScreenInput">
                 <form>
                     <input type="email" placeholder="Email Address" />
-                    <button className="loginScreenGetStarted" onClick={() => setGetStarted(true)}>GET STARTED</button>
+                    <button className="loginScreenGetStarted" onClick={() => setSignin(true)}>GET STARTED</button>
                 </form>
               </div>
           </>
