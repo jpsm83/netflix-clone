@@ -27,13 +27,13 @@ function App() {
           })
         );
       } else {
-        dispatch(logout);
+        dispatch(logout());
       }
       // always use a cleanup function when using useEffect()
       // return a function will cleanup and then execute this function
       return unsubscribe;
     });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="app">
