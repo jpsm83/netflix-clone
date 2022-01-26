@@ -14,7 +14,6 @@ const register = (e) => {
     emailRef.current.value,
     passwordRef.current.value
   ).then((authUser) => {
-    console.log(authUser)
   }).cath(error => console.log(error))
 }
 
@@ -25,7 +24,6 @@ const signIn = (e) => {
     emailRef.current.value,
     passwordRef.current.value
   ).then((authUser) => {
-    console.log(authUser)
   }).cath(error => console.log(error))
 }
 
