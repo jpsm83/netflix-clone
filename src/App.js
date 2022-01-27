@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { auth } from "./firebase";
+
 import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
-import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login/Login";
-import { auth } from "./firebase";
+
 // methods from react redux to select a state to be show or dispatch an action
 import { useDispatch, useSelector } from "react-redux";
+
 // action and states import from userSlice to be show or dispatched
 import { login, logout, selectUser } from "./features/userSlice";
 
@@ -17,7 +20,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // onAuthStateChanged is a method from firebase auth that we import from firebase file
+    // onAuthStateChanged is a method from firebase auth that we import from firebase.js file
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       if (userAuth) {
         dispatch(
