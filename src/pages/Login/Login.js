@@ -16,26 +16,26 @@ export default function Login() {
         Sign In
       </button>
       <div className="loginScreenGradient">
-      <div className="logingScreenBody">
-        {signin ? (
-          <SignupBox />
-        ) : (
-          <>
-            <h1>Unlimited films, TV programmes and more.</h1>
-            <h2>Watch anywhere. Cancel at any time.</h2>
-            <h3>
-              Ready to watch? Enter your email to create or restart our
-              membership.
-            </h3>
-            <div className="loginScreenInput">
-              <form>
-                <input type="email" placeholder="Email Address" />
-                <button onClick={() => setSignin(true)}>GET STARTED</button>
-              </form>
-            </div>
-          </>
-        )}
-      </div>
+        <div className="logingScreenBody">
+          {signin ? (
+            <SignupBox />
+          ) : (
+            <>
+              <h1>Unlimited films, TV programmes and more.</h1>
+              <h2>Watch anywhere. Cancel at any time.</h2>
+              <h3>
+                Ready to watch? Enter your email to create or restart our
+                membership.
+              </h3>
+              <div className="loginScreenInput">
+                <form>
+                  <input type="email" placeholder="Email Address" />
+                  <button onClick={() => setSignin(true)}>GET STARTED</button>
+                </form>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

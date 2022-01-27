@@ -1,7 +1,3 @@
-.plans {
-    
-}
-
 .eachPlan:hover {
     opacity: 1;
 }
@@ -19,6 +15,7 @@
     color: #fff;
     background-color: #e50914;
     font-weight: 600;
+    margin-left: 10px;
     border: none;
     cursor: pointer;
 }
